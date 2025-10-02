@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Kamada</title>
+    <meta name="description"
+        content="Pagina de el grupo Kamada, contiene eventos, tienda de indumentaria, galeria de fotos y contacto.">
+    <!-- Propety -->
+    <meta name="author" content="Matias Sticca">
+    <!-- Open Graph -->
+    <meta property="og:title" content="KAMADA">
+    <meta property="og:description" content="Página de Kamada">
+    <meta property="og:image" content="https://github.com/MatiasNSticca/matiasnsticca.github.io.git">
+    <meta property="og:url" content="https://github.com/MatiasNSticca/matiasnsticca.github.io.git">
+    <meta property="og:type" content="website">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Tipografy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rubik+Maps&display=swap"
+        rel="stylesheet">
+    <!-- FavIcon -->
+    <link rel="icon" href="/assets/img/favicon/favicon.png" type="image/png">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/606f82d68c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="inicio.html"><img src="/assets/img/logo/logo.jpg" alt="Logo"></a>
+            </div>
+
+            <!-- Botón hamburguesa (visible solo en mobile) -->
+            <button class="nav__toggle" aria-label="Abrir menú">
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+            </button>
+
+            <!-- Menú -->
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="eventos.html" class="nav__link">Eventos</a></li>
+                <li class="nav__item"><a href="tienda.html" class="nav__link">Tienda</a></li>
+                <li class="nav__item"><a href="galeria.html" class="nav__link">Galería</a></li>
+                <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                <li class="nav__item nav__item--spotify">
+                    <!-- Aquí metes el embed de Spotify -->
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/artist/5p3CzYVyNJ3qvuS6aXxo9R?utm_source=generator"
+                        width="100%" height="152" frameborder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                    </iframe>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <img class="hero__img" src="/assets/img/hero/hero.jpg" alt="Imagen de portada de Kamada, álbum Plaga">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">KAMADA</h1>
+                    <p class="hero__subtitle">Tienda oficial</p>
+                </div>
+                <div class="hero__buttons">
+                    <a href="#" class="button button--primary">Eventos</a>
+                    <a href="#" class="button button--secondary">Tienda</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Tienda -->
+        <section class="tienda">
+            <div class="tienda__container">
+                <div class="tienda__header">
+                    <h2 class="tienda__title">Tienda</h2>
+                    <p class="tienda__subtitle">Productos de Kamada</p>
+                </div>
+
+                <div class="tienda__destacados">
+                    <h4 class="tienda__destacados-title">Destacados</h4>
+                    <div class="tienda__cards">
+                        <article class="card__producto">
+                            <img class="card__img" src="/assets/img/merch/merch-1.jpg" alt="Remera negra con verde">
+                            <div class="card__content">
+                                <div class="card__text">
+                                    <h5 class="card__title">Remera</h5>
+                                    <p class="card__pricing">$10.800</p>
+                                    <p class="card__subtitle">Remera Plagas</p>
+                                </div>
+                                <div class="card__color">
+                                    <h6 class="card__placeholder">Selecciona un color</h6>
+                                    <div class="card__selector">
+                                        <label>
+                                            <input type="radio" name="color" value="black" checked />
+                                            <span class="color__circle black"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="white" />
+                                            <span class="color__circle white"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="gray" />
+                                            <span class="color__circle gray"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="button button--secondary">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="card__producto">
+                            <img class="card__img" src="/assets/img/merch/merch-2.png" alt="Remera negra con verde">
+                            <div class="card__content">
+                                <div class="card__text">
+                                    <h5 class="card__title">Remera</h5>
+                                    <p class="card__pricing">$10.800</p>
+                                    <p class="card__subtitle">Remera Plagas</p>
+                                </div>
+                                <div class="card__color">
+                                    <h6 class="card__placeholder">Selecciona un color</h6>
+                                    <div class="card__selector">
+                                        <label>
+                                            <input type="radio" name="color" value="black" checked />
+                                            <span class="color__circle black"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="white" />
+                                            <span class="color__circle white"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="gray" />
+                                            <span class="color__circle gray"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="button button--secondary">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="card__producto">
+                            <img class="card__img" src="/assets/img/merch/merch-3.png" alt="Remera negra con verde">
+                            <div class="card__content">
+                                <div class="card__text">
+                                    <h5 class="card__title">Gorra</h5>
+                                    <p class="card__pricing">$7.800</p>
+                                    <p class="card__subtitle">Remera Plagas</p>
+                                </div>
+                                <div class="card__color">
+                                    <h6 class="card__placeholder">Selecciona un color</h6>
+                                    <div class="card__selector">
+                                        <label>
+                                            <input type="radio" name="color" value="black" checked />
+                                            <span class="color__circle black"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="white" />
+                                            <span class="color__circle white"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="gray" />
+                                            <span class="color__circle gray"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="button button--secondary">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="card__producto">
+                            <img class="card__img" src="/assets/img/merch/merch-4.jpeg" alt="Remera negra con verde">
+                            <div class="card__content">
+                                <div class="card__text">
+                                    <h5 class="card__title">Remera</h5>
+                                    <p class="card__pricing">$12.800</p>
+                                    <p class="card__subtitle">Remera Logo</p>
+                                </div>
+                                <div class="card__color">
+                                    <h6 class="card__placeholder">Selecciona un color</h6>
+                                    <div class="card__selector">
+                                        <label>
+                                            <input type="radio" name="color" value="black" checked />
+                                            <span class="color__circle black"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="white" />
+                                            <span class="color__circle white"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="gray" />
+                                            <span class="color__circle gray"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="button button--secondary">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="card__producto">
+                            <img class="card__img" src="/assets/img/merch/merch-1.jpg" alt="Remera negra con verde">
+                            <div class="card__content">
+                                <div class="card__text">
+                                    <h5 class="card__title">Remera</h5>
+                                    <p class="card__pricing">$10.800</p>
+                                    <p class="card__subtitle">Remera Plagas</p>
+                                </div>
+                                <div class="card__color">
+                                    <h6 class="card__placeholder">Selecciona un color</h6>
+                                    <div class="card__selector">
+                                        <label>
+                                            <input type="radio" name="color" value="black" checked />
+                                            <span class="color__circle black"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="white" />
+                                            <span class="color__circle white"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="gray" />
+                                            <span class="color__circle gray"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="button button--secondary">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="card__producto">
+                            <img class="card__img" src="/assets/img/merch/merch-2.png" alt="Remera negra con verde">
+                            <div class="card__content">
+                                <div class="card__text">
+                                    <h5 class="card__title">Remera</h5>
+                                    <p class="card__pricing">$10.800</p>
+                                    <p class="card__subtitle">Remera Plagas</p>
+                                </div>
+                                <div class="card__color">
+                                    <h6 class="card__placeholder">Selecciona un color</h6>
+                                    <div class="card__selector">
+                                        <label>
+                                            <input type="radio" name="color" value="black" checked />
+                                            <span class="color__circle black"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="white" />
+                                            <span class="color__circle white"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="gray" />
+                                            <span class="color__circle gray"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="button button--secondary">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="card__producto">
+                            <img class="card__img" src="/assets/img/merch/merch-3.png" alt="Remera negra con verde">
+                            <div class="card__content">
+                                <div class="card__text">
+                                    <h5 class="card__title">Gorra</h5>
+                                    <p class="card__pricing">$7.800</p>
+                                    <p class="card__subtitle">Remera Plagas</p>
+                                </div>
+                                <div class="card__color">
+                                    <h6 class="card__placeholder">Selecciona un color</h6>
+                                    <div class="card__selector">
+                                        <label>
+                                            <input type="radio" name="color" value="black" checked />
+                                            <span class="color__circle black"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="white" />
+                                            <span class="color__circle white"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="gray" />
+                                            <span class="color__circle gray"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="button button--secondary">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="card__producto">
+                            <img class="card__img" src="/assets/img/merch/merch-4.jpeg" alt="Remera negra con verde">
+                            <div class="card__content">
+                                <div class="card__text">
+                                    <h5 class="card__title">Remera</h5>
+                                    <p class="card__pricing">$12.800</p>
+                                    <p class="card__subtitle">Remera Logo</p>
+                                </div>
+                                <div class="card__color">
+                                    <h6 class="card__placeholder">Selecciona un color</h6>
+                                    <div class="card__selector">
+                                        <label>
+                                            <input type="radio" name="color" value="black" checked />
+                                            <span class="color__circle black"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="white" />
+                                            <span class="color__circle white"></span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="gray" />
+                                            <span class="color__circle gray"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="button button--secondary">Comprar</button>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- <a href="#" class="button button--primary">Ver tienda</a> -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Música -->
+    <aside class="music">
+        <div class="music__container">
+            <div class="music__header">
+                <h5 class="music__title">Escucha Kamada</h5>
+                <p class="music__subtitle">Musica que te acompaña</p>
+            </div>
+            <div class="music__video">
+                <iframe data-testid="embed-iframe" style="border-radius:12px"
+                    src="https://open.spotify.com/embed/artist/5p3CzYVyNJ3qvuS6aXxo9R?utm_source=generator" width="100%"
+                    height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__img" src="/assets/img/footer/footer.jpg" alt="Banner del logo de Kamada">
+            <div class="footer__social">
+                <ul class="footer__lista">
+                    <li><i class="fa-brands fa-spotify"></i><a
+                            href="https://open.spotify.com/intl-es/artist/5p3CzYVyNJ3qvuS6aXxo9R?si=l2cCyFjtSTG-cN8GOOKPPQ">Spotify</a>
+                    </li>
+                    <li><i class="fa-brands fa-youtube"></i><a
+                            href="https://www.youtube.com/channel/UCoybCe6wofL75phQeO8xc1Q">YouTube</a></li>
+                    <li><i class="fa-brands fa-instagram"></i><a
+                            href="https://www.instagram.com/lakamada/?hl=es">Instagram</a>
+                    </li>
+                    <li><button class="button button--primary">Comprar entradas</button></li>
+                </ul>
+                <div class="footer__music">
+                    <div class="footer__header">
+                        <h5 class="footer__title">Escucha Kamada</h5>
+                        <p class="footer__subtitle">Musica que te acompaña</p>
+                    </div>
+                    <div class="footer__video">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/artist/5p3CzYVyNJ3qvuS6aXxo9R?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">TP UTN | Matías Sticca</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

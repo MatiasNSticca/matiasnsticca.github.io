@@ -1,0 +1,19 @@
+.music {
+    display: none;
+}
+
+@media (min-width: 960px) {
+
+    .music {
+        position: fixed;
+        display: flex;
+        top: 80%;
+        right: 20px;
+    }
+
+    .music .music__header {
+        display: none;
+    }
+
+
+}
